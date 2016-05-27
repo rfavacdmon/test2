@@ -24,17 +24,28 @@ class CalculatorTest extends PHPUnit_Framework_TestCase {
     }
     
     public function testTotalSuma() {
-       $this->markTestIncomplete('This test has not been implemented yet.');
+        $calc = new Calculator();
+        $suma1 = $calc->suma(10,5);
+        $suma2 = $calc->suma(11,5);
+        $suma3 = $calc->suma(12,5);
+        $this->assertEquals(48, $calc->totalSuma($suma1, $suma2, $suma3));
     }
     
 
     public function testTotalResta() {
-       $this->markTestIncomplete('This test has not been implemented yet.');
+        $calc = new Calculator();
+        $resta1 = $calc->resta(10,5);
+        $resta2 = $calc->resta(11,5);
+        $resta3 = $calc->resta(12,5);
+        $this->assertEquals(48, $calc->totalResta($resta1, $resta2, $resta3));
     }
 
 
    public function testTotal() {
-       $this->markTestIncomplete('This test has not been implemented yet.');
+        $calc = new Calculator();
+        $suma1 = $calc->suma(10,5);
+        $suma2 = $calc->suma(11,5);
+        $suma3 = $calc->suma(12,5);
     }
     
 }

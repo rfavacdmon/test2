@@ -24,7 +24,7 @@ if ($r->fetchArray() === false){
     
     $bd->query("insert into operations values('divide',40,2)");
     $bd->query("insert into operations values('divide',10,8)");
-    $bd->query("insert into operations values('divide ',13,5)");
+    $bd->query("insert into operations values('divide',13,5)");
     
     
 }

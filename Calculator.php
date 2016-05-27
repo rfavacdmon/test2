@@ -32,5 +32,17 @@ class Calculator
         return $d->execute($a,$b);
     }
     
-    
+    public function totalSuma($a=0, $b=0, $c=0)
+    {
+        $ts = new Suma();
+        $tmp = $ts->execute($a,$b);
+        return $ts->execute($tmp,$c);
+    }
+
+    public function totalResta($a=0, $b=0, $c=0)
+    {
+        $ts = new Resta();
+        $tmp = $ts->execute($a,$b);
+        return $ts->execute($tmp,$c);
+    }
 }
